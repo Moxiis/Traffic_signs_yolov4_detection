@@ -41,7 +41,7 @@ for files in os.listdir(dir_path):
 				text = f.read()
 				text = text.split("{")
 		except:
-			print("This file does not exist in this directory")
+			print(f"cannot read {files}")
 			exit(1)
 
 categories = category_list("category.txt")
